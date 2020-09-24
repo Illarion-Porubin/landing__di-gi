@@ -1,0 +1,342 @@
+@media (min-width: 640px) {
+  .logo__link {
+    margin-left: 14px;
+  }
+  .container {
+    padding: 0 30px;
+  }
+  .header {
+    &__inner {
+      min-height: 100px;
+    }
+  }
+  .top-slider {
+    &__item {
+      min-height: 386px;
+    }
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+      padding: 50px 0 15px;
+      margin: 0 auto 30px;
+      min-width: 522px;
+    }
+    &__btn {
+      text-transform: uppercase;
+      display: block;
+      margin: 0 auto;
+      font-size: 18px;
+      background-color: $accent;
+      color: $bg-color;
+      padding: 16px 45px;
+      border: none;
+      border-radius: 3px;
+      margin: 0 auto 113px;
+    }
+    .slick-dots {
+      bottom: 50px;
+    }
+    .slick-arrow {
+      width: 56px;
+      height: 56px;
+      border: none;
+      position: absolute;
+      right: 0;
+      z-index: 5;
+    }
+    .slick-prev {
+      background-color: $accent;
+      top: calc(50% - 56px);
+    }
+    .slick-next {
+      background-color: $bg-color;
+      bottom: calc(50% - 56px);
+    }
+  }
+  .title{
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  ///services///
+
+  .services {
+    padding: 24px 0 0;
+    text-align: center;
+    &__title {
+      margin-bottom: 20px;
+      &::after{
+        display: none;
+      }
+    }
+    &__descr {
+      font-size: 24px;
+      padding-bottom: 38px;
+      margin-bottom: 31px;
+      position: relative;
+      &::after{
+        content: "";
+        width: 100px;
+        height: 8px;
+        position: absolute;
+        background-color: $accent;
+        bottom: 0;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+      }
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &__items{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -30px;
+    }
+    &__item {
+      width: 50%;
+      &:nth-child(even){
+        border-left: none;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+  .logo__link {
+    margin-left: 0;
+  }
+  .top-slider {
+    &__item {
+      min-height: 465px;
+    }
+    &__title {
+      padding: 87px 0 0;
+      margin: 0 auto;
+      &::after {
+        display: none;
+      }
+    }
+    &__text {
+      padding: 25px 0 32px;
+      font-family: "RobotoCondensend-Regular";
+      line-height: 20px;
+      font-size: 18px;
+      font-weight: 400;
+      display: block;
+      max-width: 587px;
+      margin: 0 auto;
+    }
+  }
+  .call-back {
+    height: 187px;
+    text-align: left;
+    margin-bottom: 50px;
+    &__title {
+      margin-bottom: 0;
+    }
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; //центрирует относительно оси Y
+    }
+    &__box {
+      max-width: 427px;
+    }
+    &__text {
+      width: 350px;
+      display: inline-block;
+    }
+  }
+  ///services///
+
+  .services {
+    padding: 50px 0 0;
+    text-align: center;
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__descr {
+      text-align: left;
+      &::after{
+        margin-left: 0;
+      }
+    }
+    &__text {
+      margin-bottom: 27px;
+      text-align: left;
+    }
+    &__items{     
+      margin: 0 -40px;
+    }
+    &__item {
+      padding: 0 65px;
+      min-height: 334px;
+      &:hover{
+        padding: 0 18px;
+        .services__item-inner{
+          padding: 35px 60px 5px;
+          min-height: 288px;
+        }
+      }
+    }
+  } 
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .top-slider {
+    &__item {
+      min-height: 618px;
+    }
+    &__title {
+      padding-top: 101px;
+      font-size: 84px;
+      line-height: 84px;
+      letter-spacing: 2px;
+      max-width: 750px;
+    }
+    .slick-dots {
+      bottom: 80px;
+    }
+  }
+  .call-back {
+    &__box {
+      max-width: 695px;
+    }
+  }
+  ///services///
+
+  .services {
+    padding: 52px 0 0;
+    text-align: center;
+    &__title {
+      margin-bottom: 60px;
+    }
+    &__descr {
+      padding-bottom: 46px;
+      margin-bottom: 40px;
+    }
+    &__text {
+      margin-bottom: 32px;
+      max-width: 608px;
+    }
+    &__item {
+      width: 25%;
+      padding: 0 17px;
+      min-height: 277px;
+      &:nth-child(2),
+      &:nth-child(6){
+        border-right: none;
+      }
+      &:hover{
+        padding: 0 17px;
+        .services__item-inner{
+          margin: 10px 0;
+          padding: 21px 9px 5px;
+          min-height: 255px;
+        }
+      }
+    }
+  } 
+}
+
+@media (min-width: 1440px) {
+  .logo__link {
+    margin-left: 61px;
+  }
+  .container {
+    min-width: 1440px;
+    padding: 0 40px;
+  }
+  .top-slider {
+    &__item {
+      min-height: 668px;
+    }
+    &__title {
+      padding-top: 107px;
+      font-size: 96px;
+      line-height: 96px;
+      letter-spacing: 2px;
+      max-width: 865px;
+    }
+    &__text {
+      font-size: 24px;
+      line-height: 26px;
+      max-width: 886px;
+    }
+    .slick-arrow {
+      width: 70px;
+      height: 70px;
+    }
+    .slick-prev {
+      top: calc(50% - 70px);
+    }
+    .slick-next {
+      bottom: calc(50% - 70px);
+    }
+  }
+  .menu__btn {
+    margin-right: 90px;
+  }
+  .call-back {
+    &__inner {
+      padding: 0 80px;
+    }
+    &__box {
+      max-width: 796px;
+    }
+  }
+  ///services///
+
+  .services {
+    padding: 0;
+    &__inner{
+      display: flex;
+      justify-content: space-between;
+      margin-right: -40px;
+    }
+    &__head{
+      width: 25%;
+      min-width: 350px;
+      margin-right: 100px;
+    }
+    &__title {
+      margin: 90px 0 70px;
+      text-align: left;
+    }
+    &__descr {
+      padding-bottom: 38px;
+      margin-bottom: 35px;
+    }
+    &__items{
+      width: 68%;
+      margin: 0;
+    }
+    &__item {
+      width: 230px;
+      padding: 0 5px;
+      height: 273px;
+      &:hover{
+        padding: 0 5px;
+        .services__item-inner{
+          margin: 5px 0;
+          padding: 10px 3px 5px;
+          min-height: 255px;
+        }
+      }
+    }
+  }  
+}
