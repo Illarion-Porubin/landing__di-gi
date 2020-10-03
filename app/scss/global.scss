@@ -2,7 +2,6 @@
 @import "libs";
 @import "fonts";
 
-
 html {
   box-sizing: border-box;
 }
@@ -17,15 +16,15 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   margin: 0;
 }
 
-p{
+p {
   margin: 0;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -56,16 +55,16 @@ body {
   padding: 0 20px;
 }
 
-.title{
+.title {
   line-height: 28px;
   font-size: 24px;
   @extend %RobotoCondensed-400;
   position: relative;
   padding-bottom: 28px;
-  &::after{
+  &::after {
     content: "";
     position: absolute;
-    width: 100px;
+    width: 50px;
     height: 8px;
     background-color: $accent;
     bottom: 0;
@@ -75,3 +74,12 @@ body {
   }
 }
 
+@media (min-width: 640px) {
+  .title {
+    font-size: 48px;
+    line-height: 56px;
+    &::after {
+      width: 100px;
+    }
+  }
+}
