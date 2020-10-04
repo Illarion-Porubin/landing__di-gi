@@ -6,13 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
-
 </head>
 <body>
   
-  <header class="header">
+  <header class="header"> 
     <div class="container">
-      <div class="header__inner">
+      <div class="header__inner" id="header-projekct">
         <div class="logo">
           <a class="logo__link" href="#" >
             <img class="logo__link-img" src="images/logo.png" alt="logo">
@@ -35,11 +34,17 @@
       </div>
       <div class="top-slider__item">
         <h3 class="top-slider__title">Мысли глобально</h3>
+        <p class="top-slider__text">
+          Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении 
+        </p>
         <button class="top-slider__btn">Подробнее</button>
       </div>
       <div class="top-slider__item">
         <h3 class="top-slider__title">Мысли глобально</h3>
-        <a class="top-slider__btn">Подробнее</a>
+        <p class="top-slider__text">
+          Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов в маркетинге, продажах и управлении 
+        </p>
+        <button class="top-slider__btn">Подробнее</button>
       </div>
     </div>
   </section>
@@ -443,16 +448,16 @@
         </div>
         <div class="footer__social">
           <a class="footer__icon" href="#">
-            <img class="footer__icon-social" src="images/footer-icon-1.svg" alt="icon">
+            <img class="footer__icon-social animate__animated" src="images/footer-icon-1.svg" alt="icon">
           </a>
           <a class="footer__icon" href="#">
-            <img class="footer__icon-social" src="images/footer-icon-2.svg" alt="icon">
+            <img class="footer__icon-social animate__animated" src="images/footer-icon-2.svg" alt="icon">
           </a>
           <a class="footer__icon" href="#">
-            <img class="footer__icon-social" src="images/footer-icon-3.svg" alt="icon">
+            <img class="footer__icon-social animate__animated" src="images/footer-icon-3.svg" alt="icon">
           </a>
           <a class="footer__icon" href="#">
-            <img class="footer__icon-social" src="images/footer-icon-4.svg" alt="icon">
+            <img class="footer__icon-social animate__animated" src="images/footer-icon-4.svg" alt="icon">
           </a>
         </div>
         <nav class="footer__menu">
@@ -462,55 +467,55 @@
                 <a class="footer__link" href="#">КОНТАКТЫ</a>
               </li>
               <li class="footer__cont-li" >
-                <a class="footer__link" href="#">+80 555 55 66</a>
+                <a class="footer__link" href="tel:+805555566">+80 555 55 66</a>
               </li>
               <li class="footer__cont-li" >
-                <a class="footer__link" href="#">digi@gmail.com</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__box">
-            <ul class="footer__cont-inner">
-              <li class="footer__cont-li" >
-                <a class="footer__link" href="">АДРЕС</a>
-              </li>
-              <li class="footer__cont-li" >
-                <a class="footer__link" href="">Пр. Науки 107</a>
-              </li>
-              <li class="footer__cont-li" >
-                <a class="footer__link" href="">Kиев / Украина</a>
+                <a class="footer__link" href="mailto:digi@gmail.com">digi@gmail.com</a>
               </li>
             </ul>
           </div>
           <div class="footer__box">
             <ul class="footer__cont-inner">
               <li class="footer__cont-li" >
-                <a class="footer__link" href="">ПОМОЩЬ</a>
+                <a class="footer__link" href="#">АДРЕС</a>
               </li>
               <li class="footer__cont-li" >
-                <a class="footer__link" href="">Как с нами связаться?</a>
+                <a class="footer__link" href="#">Пр. Науки 107</a>
               </li>
               <li class="footer__cont-li" >
-                <a class="footer__link" href="">Что такое диджитал?</a>
-              </li>
-              <li class="footer__cont-li" >
-                <a class="footer__link" href="">Стоимость услуг</a>
+                <a class="footer__link" href="#">Kиев / Украина</a>
               </li>
             </ul>
           </div>
           <div class="footer__box">
             <ul class="footer__cont-inner">
               <li class="footer__cont-li" >
-                <a class="footer__link" href="">МЕНЮ</a>
+                <a class="footer__link" href="#">ПОМОЩЬ</a>
               </li>
               <li class="footer__cont-li" >
-                <a class="footer__link" href="">Наши проекты</a>
+                <a class="footer__link" href="#">Как с нами связаться?</a>
               </li>
               <li class="footer__cont-li" >
-                <a class="footer__link" href="">Команда</a>
+                <a class="footer__link" href="#">Что такое диджитал?</a>
               </li>
               <li class="footer__cont-li" >
-                <a class="footer__link" href="">Блог</a>
+                <a class="footer__link" href="#">Стоимость услуг</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__box">
+            <ul class="footer__cont-inner">
+              <li class="footer__cont-li" >
+                <a class="footer__link" href="#">МЕНЮ</a>
+              </li>
+              <li class="footer__cont-li" >
+                <a class="footer__link" href="#">Наши проекты</a>
+              </li>
+              <li class="footer__cont-li" >
+                <a class="footer__link" href="#">Команда</a>
+              </li>
+              <li class="footer__cont-li" >
+                <a class="footer__link" href="#">Блог</a>
               </li>
             </ul>
           </div>
@@ -520,14 +525,10 @@
     <div class="footer__arrow">
       <div class="footer__arrow-up">
         <div class="footer__arrow-text">
-          <p>
-            Вверх
-          </p>
+          <a class="footer__scroll-up" href="#header-projekct">Вверх</a>
         </div>
-        <div class="footer__arrow-link">
-          <a href="">
-            <img class="footer__arrow-img" src="images/arrow-up.svg" alt="">
-          </a>
+        <div class="footer__arrow-link ">     
+            <img class="footer__arrow-img animate__animated animate__fadeInUp animate__infinite" src="images/arrow-up.svg" alt="">     
         </div>
       </div>
     </div>

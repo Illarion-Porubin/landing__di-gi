@@ -42,5 +42,21 @@ $(function(){
     ]
   });
 
+  // $('.footer__icon-social').on('hover', function () {
+    
+  //   $(this).addClass("animate__heartBeat");
+  // });
+  $('.footer__icon').hover(function(){
+    $(this).find('.footer__icon-social').toggleClass('animate__heartBeat');
+  });
+
+  function backToTop() {
+    let button = $('.footer__scroll-up');
+
+    button.on('click', (e) => {
+      e.preventDefault();
+      $('html').animate({scrollTop: 0}, 1000);
+    })
+  }
   
 });
